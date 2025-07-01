@@ -6,10 +6,11 @@ All complicated work done in: https://github.com/rezmason/matrix (where html can
 
 ## How to use
 
-Build and publish with the .scr extension:
-
+Publish with the application:
 ```
-dotnet publish -c Release -r win-x64 --self-contained true -o publish && ren publish\MatrixScreensaver.exe MatrixScreensaver.scr
+dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o publish
 ```
 
-Copy to `%WINDIR%\System32` (requires admin)
+Rename `.exe` to `.scr`
+
+Copy to `%WINDIR%\System32\MactrixScreensaver` (requires admin)
