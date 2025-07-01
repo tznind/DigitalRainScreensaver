@@ -12,5 +12,3 @@ dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=
 ```
 
 Rename `.exe` to `.scr`
-
-Copy to `%WINDIR%\System32\MactrixScreensaver` (requires admin)
