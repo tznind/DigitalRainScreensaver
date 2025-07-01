@@ -12,3 +12,5 @@ dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=
 ```
 
 Rename `.exe` to `.scr`
+
+Right click the .scr file and choose 'Install'
