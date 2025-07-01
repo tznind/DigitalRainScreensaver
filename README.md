@@ -4,6 +4,8 @@ Simple screensaver that outputs different colored digital rain effects on each m
 
 All complicated work done in: https://github.com/rezmason/matrix (where html canvas are loaded from)
 
+![image](https://github.com/user-attachments/assets/5db5981f-7205-42d1-afb7-0b3946d53e48)
+
 ## How to use
 
 Publish with the application:
