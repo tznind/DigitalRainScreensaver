@@ -48,6 +48,7 @@ namespace MatrixScreensaver
             StartPosition = FormStartPosition.Manual;
             Bounds = screen.Bounds;
             FormBorderStyle = FormBorderStyle.None;
+            BackColor = Color.Black;
             TopMost = true;
             DoubleBuffered = true;
 
@@ -55,6 +56,7 @@ namespace MatrixScreensaver
             {
                 Dock = DockStyle.Fill,
                 Source = new Uri(matrixUrl),
+                BackColor = Color.Black
             };
             Controls.Add(webView);
 
