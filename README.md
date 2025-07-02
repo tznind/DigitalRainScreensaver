@@ -10,11 +10,12 @@ All complicated work done in: https://github.com/rezmason/matrix (where html can
 
 Building requires the [dotnet sdk](https://dotnet.microsoft.com/en-us/download).
 
-Publish with the application:
+After installing the SDK open a Terminal and navigate to the folder you checked out the code in and run:
+
 ```
 dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o publish
 ```
 
-Rename `.exe` to `.scr`
+This will create a file called `MatrixScreensaver.exe` rename `.exe` to `.scr`
 
-Right click the .scr file and choose 'Install'
+In File Explorer, right click the .scr file and choose 'Install'
