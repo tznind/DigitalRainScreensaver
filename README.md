@@ -18,7 +18,7 @@ The actual matrix effect (all the hard work!) was done by [rezmason](https://git
 
 Checkout the code from GitHub using the above green `Code<>` button on the website or using `git clone` from command line.
 
-Building requires the [dotnet sdk](https://dotnet.microsoft.com/en-us/download).
+Building requires the [dotnet sdk](https://dotnet.microsoft.com/en-us/download) (net 9.0).
 
 After installing the SDK open a Terminal and navigate to the folder you checked out the code in and run:
 
