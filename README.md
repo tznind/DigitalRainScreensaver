@@ -23,6 +23,7 @@ Building requires the [dotnet sdk](https://dotnet.microsoft.com/en-us/download) 
 After installing the SDK open a Terminal and navigate to the folder you checked out the code in and run:
 
 ```
+cd MatrixScreensaver
 dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o publish
 ```
 
