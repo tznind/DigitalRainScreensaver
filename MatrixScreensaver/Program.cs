@@ -56,7 +56,8 @@ namespace MatrixScreensaver
             {
                 Dock = DockStyle.Fill,
                 Source = new Uri(matrixUrl),
-                BackColor = Color.Black
+                BackColor = Color.Black,
+                DefaultBackgroundColor = Color.Black
             };
             Controls.Add(webView);
 
