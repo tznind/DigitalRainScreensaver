@@ -8,6 +8,8 @@ All complicated work done in: https://github.com/rezmason/matrix (where html can
 
 ## How to use
 
+Checkout the code from GitHub using the above green `Code<>` button on the website or using `git clone` from command line.
+
 Building requires the [dotnet sdk](https://dotnet.microsoft.com/en-us/download).
 
 After installing the SDK open a Terminal and navigate to the folder you checked out the code in and run:
