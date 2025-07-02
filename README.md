@@ -2,7 +2,15 @@
 
 Simple screensaver that outputs different colored digital rain effects on each monitor connected until you move mouse.
 
-All complicated work done in: https://github.com/rezmason/matrix (where html canvas are loaded from)
+This is a dotnet WinForms project that uses WebView2
+
+- Enumerates the number of displays
+- Presents a topmost Form on each display showing effect
+- Polls the mouse to see when it moves (upon which code exits)
+
+All code is in [Program.cs](./MatrixScreensaver/Program.cs)
+
+The actual matrix effect (all the hard work!) was done by [rezmason](https://github.com/rezmason), see: https://github.com/rezmason/matrix
 
 ![image](https://github.com/user-attachments/assets/5db5981f-7205-42d1-afb7-0b3946d53e48)
 
