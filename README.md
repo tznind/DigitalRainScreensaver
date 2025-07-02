@@ -8,6 +8,8 @@ All complicated work done in: https://github.com/rezmason/matrix (where html can
 
 ## How to use
 
+Building requires the [dotnet sdk](https://dotnet.microsoft.com/en-us/download).
+
 Publish with the application:
 ```
 dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o publish
