@@ -16,7 +16,7 @@ The actual matrix effect (all the hard work!) was done by [rezmason](https://git
 
 ## How to use
 
-Checkout the code from GitHub using the above green `Code<>` button on the website or using `git clone` from command line.
+Checkout the code from GitHub using the above green `<> Code ⌄` button on the website or using `git clone` from command line.
 
 Building requires the [dotnet sdk](https://dotnet.microsoft.com/en-us/download) (net 9.0).
 
