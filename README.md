@@ -12,7 +12,8 @@ All code is in [Program.cs](./MatrixScreensaver/Program.cs)
 
 The actual matrix effect (all the hard work!) was done by [rezmason](https://github.com/rezmason), see: https://github.com/rezmason/matrix
 
-![image](https://github.com/user-attachments/assets/5db5981f-7205-42d1-afb7-0b3946d53e48)
+![image](https://github.com/user-attachments/assets/e88f7ad8-87f0-4393-aa2a-fbee5a104b8c)
+
 
 ## How to use
 
