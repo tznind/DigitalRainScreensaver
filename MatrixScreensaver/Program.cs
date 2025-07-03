@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 using Microsoft.Web.WebView2.WinForms;
 using Timer = System.Windows.Forms.Timer;
@@ -16,15 +17,25 @@ namespace MatrixScreensaver
             Application.SetCompatibleTextRenderingDefault(false);
 
             var screens = Screen.AllScreens;
-            var forms = screens.Select((screen, index) =>
+
+            int i = 0;
+            var forms = screens.Select(screen =>
             {
-                string matrixUrl = index switch
+                string matrixUrl;
+                if (screen.Primary)
                 {
-                    0 => "https://rezmason.github.io/matrix/?palette=0.1,0,0.2,0,1,0,0,0.5,0.5,0,0,1", // red
-                    1 => "https://rezmason.github.io/matrix/",                                      // green (default)
-                    2 => "https://rezmason.github.io/matrix/?palette=0.1,0,0.2,0,0,0,1,0.5,0,0,0.5,1", // blue
-                    _ => "https://rezmason.github.io/matrix/" // fallback
-                };
+                    matrixUrl = "https://rezmason.github.io/matrix/"; // green (default)
+                }
+                else
+                {
+                    i++;
+                    matrixUrl = i switch
+                    {
+                        1 => "https://rezmason.github.io/matrix/?palette=0.1,0,0.2,0,1,0,0,0.5,0.5,0,0,1", // red
+                        2 => "https://rezmason.github.io/matrix/?palette=0.1,0,0.2,0,0,0,1,0.5,0,0,0.5,1", // blue
+                        _ => "https://rezmason.github.io/matrix/" // fallback
+                    };
+                }
 
                 var form = new FullscreenMatrixForm(screen, matrixUrl);
                 form.Show();
